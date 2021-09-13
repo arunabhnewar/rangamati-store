@@ -15,7 +15,7 @@ const showProducts = (products) => {
       <div>
     <img class="product-image" src=${product.image}></img>
       </div>
-      <h4>${product.title.slice(0, 22)}</h4>
+      <h4>${product.title.slice(0, 18)}</h4>
       <p class="fw-bold">Category: <span class="category-text">${product.category}</span></p>
       <p class="fw-bold">Rating: <i class="fas fa-star rating"></i> ${product.rating.rate} - Reviewers: <i class="fas fa-user user"></i> ${product.rating.count}</p>
       <h3>Price: $ ${product.price}</h3>
@@ -52,7 +52,7 @@ const updatePrice = (id, value) => {
 
 // set innerText function
 const setInnerText = (id, value) => {
-  document.getElementById(id).innerText = value.toFixed(2);
+  document.getElementById(id).innerText = Math.round(value);
 };
 
 
