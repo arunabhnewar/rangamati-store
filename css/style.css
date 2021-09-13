@@ -1,6 +1,7 @@
 body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
+  background-color: #c8d6e5 !important;
 }
 
 .menubar {
