@@ -1,7 +1,7 @@
 body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
-  background-color: #c8d6e5 !important;
+  background-color: #CAD3C8 !important;
 }
 
 .menubar {
@@ -16,7 +16,7 @@ body {
 }
 
 .brand-name:hover {
-  color: rgb(192, 51, 51);
+  color: #d35400;
 }
 
 .search-field {
@@ -49,7 +49,7 @@ body {
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 20px;
+  column-gap: 30px;
   /* border: 1px solid black; */
   text-align: center;
   width: 100%;
@@ -60,15 +60,17 @@ body {
 .single-product {
   height: 100%;
   padding: 15px 10px;
-  transition: 0.6s;
+  transition: transform 0.6s;
   margin-bottom: 50px;
-  background-color: #dff9fb;
+  background-color: #f5f6fa;
+  cursor: pointer;
 }
 
 .single-product:hover {
-  box-shadow: 10px 10px 20px gray;
+  box-shadow: 10px 15px 20px #7f8fa6;
   border-radius: 10px;
-  border: 1px solid cyan;
+  border: 1px solid aquamarine;
+  transform: scale(1.1);
 }
 
 .product-image {
@@ -76,8 +78,13 @@ body {
   height: 150px;
 }
 
+.product-title {
+  color: #30336b;
+  font-weight: 700;
+}
+
 .category-text {
-  color: brown;
+  color: #d35400;
 }
 
 .add-btn {
@@ -111,11 +118,13 @@ body {
   /* border: 1px solid green; */
   padding: 10px;
   box-shadow: 5px 10px 20px gray;
-  border-radius: 5px;
+  cursor: pointer;
+  border-radius: 10px;
   margin-left: 50px;
   margin-right: 40px;
   position: fixed;
-  background-color: #ecf0f1;
+  background-color: #dfe6e9;
+  /* color: #fff; */
 }
 
 

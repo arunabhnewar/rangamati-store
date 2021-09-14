@@ -15,10 +15,10 @@ const showProducts = (products) => {
       <div>
     <img class="product-image" src=${product.image}></img>
       </div>
-      <h4>${product.title.slice(0, 18)}</h4>
+      <h4 class="product-title">${product.title.slice(0, 18)}</h4>
       <p class="fw-bold">Category: <span class="category-text">${product.category}</span></p>
       <p class="fw-bold">Rating: <i class="fas fa-star rating"></i> ${product.rating.rate}</p>
-      <p class="fw-bold">Based on Reviews: <i class="fas fa-user user"></i> ${product.rating.count}</p>
+      <p class="fw-bold">Total User Reviews: <i class="fas fa-user user"></i> ${product.rating.count}</p>
       <h3>Price: $ ${product.price}</h3>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now add-btn"> <i class="fas fa-shopping-cart"></i> Add to Cart</button>
       <button id="details-btn" class="detail-btn">Details</button></div>
